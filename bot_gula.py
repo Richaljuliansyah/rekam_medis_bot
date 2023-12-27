@@ -231,19 +231,6 @@ def get_profile_data(user_id):
         return profile_data
     else:
         return None
-from aiogram import Bot, types
-from aiogram.dispatcher import Dispatcher
-from aiogram.contrib.fsm_storage.memory import MemoryStorage
-from aiogram.dispatcher import FSMContext
-from aiogram.dispatcher.filters.state import State, StatesGroup
-import matplotlib.pyplot as plt
-
-# Inisialisasi bot dan dispatcher
-bot = Bot(token="YOUR_BOT_TOKEN")
-storage = MemoryStorage()
-dp = Dispatcher(bot, storage=storage)
-
-
 # States untuk rekam medis baru
 class RekamMedisStates(StatesGroup):
     GULA_DARAH_SEWAKTU = State()

@@ -465,6 +465,6 @@ async def back_to_menu(callback_query: types.CallbackQuery):
     await bot.send_message(callback_query.from_user.id, "Kembali ke menu utama", reply_markup=menu_keyboard)
 
 # Memulai bot
-print("program system anda berhasil dijalankan")
+print("program system berhasil dijalankan yuhuuuuuuuuuuu")
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)
